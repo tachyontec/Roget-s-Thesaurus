@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "roget's thesaurus"
+version = "0.1.0"
+description = "The project \"Roget's Thesaurus in the 21st Century\" aims to modernize the traditional categorization system of Roget's Thesaurus using machine learning techniques, by retrieving its classification and word entries, leveraging word embeddings for unsupervised clustering to identify comparable classifications, and developing supervised learning models for predicting word classes or sections/divisions, ultimately enhancing our understanding of semantic relationships in language."
+authors = ["tachyontec <t8200174@aueb.gr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+requests = "*"
+beautifulsoup4 = "*"
+pandas = "*"
+numpy = "*"
+nltk = "*"
+scikit-learn = "*"
+keras = "*"
+jupyter = "^1.0.0"
+pyarrow = "^15.0.0"
+tensorflow-io-gcs-filesystem = { version = "0.27.0"}
+tensorflow = "2.12.0"
+umap = "^0.1.1"
+matplotlib="*"
+ipykernel = "^6.29.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
